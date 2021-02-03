@@ -5,14 +5,12 @@
 
       <v-spacer></v-spacer>
       <v-toolbar-item>
-        <v-btn text> Home </v-btn>
+        <v-btn text> <router-link to="/"> Home </router-link></v-btn>
 
-        <v-btn text> About </v-btn>
-        <v-btn text> Contact </v-btn>
+        <v-btn text><router-link to="/about"> About </router-link> </v-btn>
+        <v-btn text> <router-link to="/contact"> Contact </router-link> </v-btn>
 
-        <v-btn icon>
-          <v-icon>mdi-heart</v-icon>
-        </v-btn>
+      
       </v-toolbar-item>
     </v-toolbar>
   </v-container>
