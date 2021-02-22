@@ -6,7 +6,6 @@
       <v-spacer></v-spacer>
       <v-toolbar-item>
         <v-btn text> <router-link to="/"> Home </router-link></v-btn>
-
         <v-btn text><router-link to="/about"> About </router-link> </v-btn>
         <v-btn text> <router-link to="/contact"> Contact </router-link> </v-btn>
 

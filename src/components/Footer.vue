@@ -1,21 +1,15 @@
 <template>
   <v-container>
-    <v-footer padless>
+    <v-footer padless class="center">
       <v-card flat class="text-center">
         <v-card-text>
-          <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
+          <v-btn v-for="icon in icons" :key="icon" class="mx-8" dark icon>
+            <a :href="icon.url" :target="icon.target"><v-icon size="24px">{{ icon.name }}</v-icon></a>
             <v-icon size="24px">{{ icon }}</v-icon>
           </v-btn>
         </v-card-text>
-        <v-card-text class="pt-0"
-          >Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet.
-          Mauris cursus commodo interdum. Praesent ut risus eget metus luctus
-          accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim
-          a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula
-          lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus
-          iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum
-          tempor vel ut orci. Orci varius natoque penatibus et magnis dis
-          parturient montes, nascetur ridiculus mus.</v-card-text
+        <v-card-text class="pt-1"
+          >A picture captures a moment othewise forgotten, it captures feelings and memories. I love capturing people, places and feelings and I believe that looking through the lense can make you see things you othewise would'nt. </v-card-text
         >
         <v-divider></v-divider>
         <v-card-text>
@@ -31,7 +25,27 @@
 export default {
   name: "Header",
   data: () => ({
-    icons: ["fab fa-facebook", "fab fa-linkedin", "fab fa-instagram"],
+    icons: [
+      {
+        name: "fab fa-facebook",
+        url: 'https://www.facebook.com/backpackliife/',
+        target: '_blank'
+      },
+      {
+        name: "fab fa-linkedin",
+        url: 'https://www.linkedin.com/in/sofie-kihlstr%C3%B6m-45b5581b5/',
+        target: '_blank'
+      },
+      {
+        name: "fab fa-instagram",
+        url: 'https://www.instagram.com/backpackliife/',
+        target: '_blank'
+      },
+      {
+        name: "fab fa-youtube",
+        url: 'https://www.youtube.com/channel/UCGfp7jYgpK4tbctMZk72CtA',
+        target: '_blank'
+      }],
   }),
 };
 </script>
